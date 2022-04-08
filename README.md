@@ -6,12 +6,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
 - [My process](#my-process)
+-[Screenshot] (#screenshot)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
 
 
 ## My process
+
+### Screenshot
+
+![Alt text](/qr-code-componente.png?raw=true "Projeto Screenshot")
 
 ### Built with
 
