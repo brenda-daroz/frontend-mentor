@@ -1,0 +1,11 @@
+:root {
+    --font: "Outfit", sans-serif;
+    --background-color: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --title-font-color: white;
+    --main-font-color: hsl(215, 51%, 70%);
+    --special-font-color: hsl(178, 100%, 50%);
+    --hover-color: hsl(178, 100%, 50%);
+    --eye-hover: rgba(0, 255, 247, 40%);
+    --line: hsl(215, 32%, 27%)
+}

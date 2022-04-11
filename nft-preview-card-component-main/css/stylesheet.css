@@ -1,0 +1,168 @@
+body {
+    background-color: var(--background-color);
+    font-family: var(--font);
+    font-size: 0.8rem;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--card-background);
+    height: 28rem;
+    width: 15.5rem;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.image__container {
+    line-height: 0;
+    position: relative;
+    max-width: 15.5rem;
+}
+
+.image__equilibrium {
+    width: 100%;
+    display: block;
+    border-radius: 0.6rem;   
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    background: var(--eye-hover);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.eye__image {
+    max-width: 3.2rem;
+    max-height: 3.2rem;
+}
+
+.image__container-hover:hover{
+color: var(--hover-color);
+}
+
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    height: 9.3rem;
+    justify-content: space-between;
+}
+
+.text__container-p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.text__container-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--title-font-color);
+}
+
+.text__container-title:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.time__remaining {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    border-top: 0.08rem solid var(--line);
+}
+
+p {
+    color: var(--main-font-color);
+}
+
+.icon__ethereum {
+    color: var(--special-font-color);
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.icon__ethereum::before {
+    margin-right: 0.3rem;
+    content: url(/Users/brenda/Documents/Programming/portfolio/frontend-mentor/nft-preview-card-component-main/images/icon-ethereum.svg);
+}
+
+.icon__clock {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.icon__clock::before {
+    margin-right: 0.3rem;
+    height: inherit;
+    content: url(/Users/brenda/Documents/Programming/portfolio/frontend-mentor/nft-preview-card-component-main/images/icon-clock.svg);
+}
+
+
+
+.author__section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: inherit;
+    margin-top: 0.9rem;
+    
+}
+
+.author__section p {
+    font-size: 0.75rem;
+    margin-left: 0.6rem;
+}
+
+.img__avatar {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    border-radius: 50%;
+    border: solid white 0.05rem;
+
+}
+
+p span {
+    color: white;
+}
+
+span:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.attribution {
+    color: var(--main-font-color);
+    font-family: var(--font);
+    font-size: 0.6rem;
+}
