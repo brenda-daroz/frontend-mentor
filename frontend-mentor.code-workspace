@@ -2,12 +2,18 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "nft-preview-card-component-main"
 		}
 	],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "frontend-mentor",
 		"liveServer.settings.mount": [
-		  ["/frontend-mentor", "."],
+			[
+				"/frontend-mentor",
+				"."
+			],
 		]
 	}
 }
