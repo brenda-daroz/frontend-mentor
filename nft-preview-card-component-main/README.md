@@ -25,6 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![Alt text](/nft-preview-card-component-main.png?raw=true
 
 ## My process
 
