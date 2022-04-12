@@ -16,7 +16,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![Alt text](/qr-code-component/qr-code-componente.png?raw=true "Projeto Screenshot")
+![Alt text](/qr-code-component/qr-code-componente.png?raw=true "Project Screenshot")
 
 ### Built with
 
