@@ -81,8 +81,7 @@ main {
     color: var(--main-text);
     font-size: 0.8rem;
     margin-top: 0.5rem; 
-   
-    
+    cursor: default;
 }
 
 .text__question {
@@ -91,9 +90,14 @@ main {
     color: var(--main-text);
     transition: 0.5s;
 }
+
+.text__question:hover {
+    cursor: pointer;
+}
+
 .text__question::after {
     align-self: flex-end;
-    content: url(/Users/brenda/Documents/Programming/portfolio/frontend-mentor/faq-accordion-card-main/images/icon-arrow-down.svg);
+    content: url(/frontend-mentor/faq-accordion-card-main/images/icon-arrow-down.svg);
     transition: 0.5s;
 }
 
