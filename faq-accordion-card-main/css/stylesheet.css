@@ -1,0 +1,131 @@
+body {
+    font-family: var(--font);
+
+    background-image: linear-gradient(var(--background-soft-violet), var(--background-soft-blue));
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card__container {
+    height: 25rem;
+    width: 48rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img__container {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img__background {
+    position: absolute;
+    width: 40rem;
+    transform: translateX(-50%); 
+}
+
+.img__woman-desktop {
+    position: absolute;
+    width: 25rem;
+    transform: translateX(-18%); 
+}
+
+.img__box {
+    width: 10rem;
+    position: absolute;
+    transform: translate(-50%, 105%);
+}
+
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4rem 0 2rem 0;
+    margin-right: 4rem;
+    
+}
+
+.text__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    color: var(--title);
+
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-text);
+}
+
+.text__answer {
+    font-weight: 400;
+    color: var(--main-text);
+    font-size: 0.8rem;
+    margin-top: 0.5rem; 
+   
+    
+}
+
+.text__question {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text);
+    transition: 0.5s;
+}
+.text__question::after {
+    align-self: flex-end;
+    content: url(/Users/brenda/Documents/Programming/portfolio/frontend-mentor/faq-accordion-card-main/images/icon-arrow-down.svg);
+    transition: 0.5s;
+}
+
+
+
+hr {
+    border: 0;
+    padding: 0;
+    height: 0.1rem;
+    width: 100%;
+    background-color: var(--dividers);
+}
+
+.hidden {
+    overflow: hidden;
+    height: 0;
+    
+    
+}
+
+.active {
+    color: black;
+}
+
+.active::after {
+    transform: rotate(180deg);
+    transition: 0.5s;
+    
+}
+
+.attribution {
+    color: var(--title);
+    font-family: var(--font);
+    font-size: 0.6rem;
+}
