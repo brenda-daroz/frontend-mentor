@@ -61,7 +61,7 @@ main {
 
 .text__title {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     align-self: flex-start;
     color: var(--title);
@@ -82,6 +82,7 @@ main {
     font-size: 0.8rem;
     margin-top: 0.5rem; 
     cursor: default;
+    line-height: 1.4rem;
 }
 
 .text__question {
@@ -132,4 +133,61 @@ hr {
     color: var(--title);
     font-family: var(--font);
     font-size: 0.6rem;
+}
+
+
+@media screen and (max-width:900px){
+    
+    .card__container {
+        display: flex;
+        flex-direction: column;
+        height: 35rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+
+    .text__container {
+        width: 100%;
+        height: 80%;
+        padding: 0;
+        margin-top: 2rem;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .text__title {
+        align-self: center;
+    }
+
+    .accordion {
+        padding: 1rem;
+    }
+
+
+    .img__background {
+        content: url(/frontend-mentor/faq-accordion-card-main/images/bg-pattern-mobile.svg);
+        position: relative;
+        width: auto;
+        transform: none;
+    }
+
+    .img__box {
+        transform: translate(50%, -25%);
+        width: 5rem;
+    }
+
+    .img__woman-desktop {
+        transform: translateY(-35%);
+        width: 70%;
+    }
+
+    .img__container {
+        display: flex;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        overflow: visible;
+    }
 }
