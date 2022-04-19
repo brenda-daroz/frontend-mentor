@@ -1,0 +1,10 @@
+:root {
+    --font: "Bai Jamjuree", sans-serif;
+    --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-shadow:  hsl(171, 66%, 35%);
+    --light-blue: hsl(233, 100%, 69%);
+    --light-blue-shadow: hsl(233, 100%, 50%);
+    --dark-greyish-blue: hsl(210, 10%, 33%);
+    --greyish-blue: hsl(201, 11%, 66%);
+    --footer: hsl(201, 11%, 95%);
+}

@@ -1,0 +1,338 @@
+body {
+    font-family: var(--font);
+}
+
+main {
+    background-image: url(/clipboard-landing-page-master/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.section__one {
+    height: 100vh;
+    text-align: center;
+}
+
+.section__one-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    padding: 5rem 1.5rem 0 1.5rem;
+}
+
+.section__one-text {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__one-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark-greyish-blue);
+    /* margin-bottom: 2rem; */
+}
+
+.section__one-p,
+.section__two-p,
+.section__three-p,
+.section__five-p {
+    font-weight: 400;
+    color: var(--greyish-blue);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+
+    /* text-align: center; */
+}
+
+button {
+    width: 20rem;
+    height: 3rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.button__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 8rem;
+}
+
+.button__ios {
+    background-color: var(--strong-cyan);
+    box-shadow: var(--strong-cyan-shadow) 0px 2px 0px, var(--strong-cyan-shadow) 0px 10px 20px -10px;
+}
+
+.button__mac {
+    background-color: var(--light-blue);
+    box-shadow: var(--light-blue-shadow) 0px 2px 0px, var(--light-blue-shadow) 0px 10px 20px -10px;
+    ;
+}
+
+.section__two,
+.section__three,
+.section__four,
+.section__five {
+    padding: 1rem 1.6rem 1.5rem 1.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--dark-greyish-blue);
+    padding-bottom: 1.5rem;
+}
+
+
+.img__computer,
+.img__devices {
+    max-width: 18rem;
+    padding: 0 0 3rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h3 {
+    font-weight: 600;
+    color: var(--dark-greyish-blue);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.section__two-p,
+.section__three-p,
+.section__five-p {
+    padding-bottom: 3rem;
+}
+
+.blacklists {
+    content: url(/clipboard-landing-page-master/images/icon-blacklist.svg);
+}
+
+.snippets {
+    content: url(/clipboard-landing-page-master/images/icon-text.svg);
+}
+
+.preview {
+    content: url(/clipboard-landing-page-master/images/icon-preview.svg);
+}
+
+.blacklists,
+.snippets,
+.preview {
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__four-img {
+    padding-bottom: 3rem;
+}
+
+.footer {
+    background-color: var(--footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer a {
+    font-weight: 400;
+    color: var(--dark-greyish-blue);
+    font-size: 1.2rem;
+}
+
+.footer li {
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.logo__footer {
+    max-width: 4rem;
+    padding-bottom: 2rem;
+}
+
+.icon__fb {
+    content: url(/clipboard-landing-page-master/images/icon-facebook.svg);
+}
+
+.icon__twitter {
+    content: url(/clipboard-landing-page-master/images/icon-twitter.svg);
+}
+
+.icon__ig {
+    content: url(/clipboard-landing-page-master/images/icon-instagram.svg);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 2rem;
+}
+
+.attribution {
+    color: var(--dark-greyish-blue);
+    font-family: var(--font);
+    font-size: 0.6rem;
+    background-color: var(--footer);
+}
+
+
+
+@media screen and (min-width:600px) {
+    main {
+        background-image: url(/clipboard-landing-page-master/images/bg-header-desktop.png);
+    }
+
+    .section__one-container {
+        padding: 5% 10% 0 10%;
+        height: 80%;
+    box-sizing: border-box;
+    padding-top: 8rem;
+
+    }
+
+    .section__one-text {
+        width: 70%;
+    }
+
+    .button__container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 0 8rem 0 8rem;
+        
+    }
+
+    button {
+        width: 13rem;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .title__content {
+        width: 70%;
+    }
+
+    .img__computer {
+        max-width: 38rem;
+        transform: translateX(-15%);
+        width: 60%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 3rem;
+
+    }
+
+    .description__content {
+        display: flex;
+    }
+
+    .description__text {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+     
+    h3, .section__two-p {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .section__two-p {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .section__two, .section__three, .section__four, .section__five, .footer {
+        padding: 2rem 3rem 2rem 3rem;;
+    }
+
+    .img__devices {
+        max-width: 35rem;
+    }
+
+    .workflow {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .blacklist, .snippet, .previews {
+        flex: 1
+    }
+
+    .h3__blacklist {
+        text-align:center;
+        
+    }
+     .section__four {
+         flex-direction: row;
+         justify-content: space-between;
+     }
+
+     .footer {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+     }
+
+     ul {
+         display: flex;
+         width: 70%;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding-left: 3rem;
+         
+     }
+
+     li a {
+         padding: 0 1rem 0 1rem;
+     }
+
+     .social-media {
+         width: 15%;
+     }
+
+     .logo__footer {
+         width: 50%;
+         padding-right: 2rem;
+     }
+
+     
+    
+}
