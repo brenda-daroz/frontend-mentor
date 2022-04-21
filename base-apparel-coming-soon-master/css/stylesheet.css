@@ -1,0 +1,171 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    color: var(--desaturated-red)
+}
+
+.header {
+    padding: 1.5rem;
+}
+
+
+main {
+    font-family: var(--font);
+}
+
+/* .hero-mobile {
+    width: inherit;
+} */
+
+.hero__mobile-img {
+    content: url(/frontend-mentor/base-apparel-coming-soon-master/images/hero-mobile.jpg);
+    height: 100%;
+   
+    /* object-fit: contain; */
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 3rem 2rem 1rem 2rem;
+    text-align: center;
+    color: var(--dark-greyish-red);
+    letter-spacing: 0.8rem;
+    text-transform: uppercase
+}
+
+.title span {
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+.title__content p {
+    text-align: center;
+    padding: 0 0.5rem 1.5rem 0.5rem;
+    line-height: 1.4rem;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: row;
+    /* This bit draws the box around it */
+    border: 1px solid var(--desaturated-red-opacity);
+    margin: 0 2rem 0 2rem;
+    border-radius: 2rem;
+}
+
+.submit-form-error {
+    border: 1px solid var(--soft-red);
+}
+
+.error {
+    display: block;
+    margin: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 0.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+.input::placeholder {
+    color: var(--desaturated-red-opacity);
+}
+
+.input {
+    padding: 1rem;
+    /* Tell the input to use all the available space */
+    flex-grow: 2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border: none;
+    background-color: inherit;
+
+}
+
+.input:focus {
+    /* removing the input focus blue box. Put this on the form if you like. */
+    outline: none;
+}
+
+.submit {
+    width: 4rem;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: inherit;
+    box-shadow: var(--shadow) 0px 5px 25px 0px;
+}
+
+
+.submit::after {
+    content: url(/frontend-mentor/base-apparel-coming-soon-master/images/icon-arrow.svg);
+}
+
+.attribution {
+    color: var(--dark-greyish-blue);
+    font-family: var(--font);
+    font-size: 0.6rem;
+    background-color: inherit;
+    position: fixed;
+    bottom: 0
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .header {
+        grid-area: hd;
+    }
+
+    .main {
+        grid-area: main;
+        
+    }
+
+    .hero__mobile {
+        grid-area: sd;
+    }
+
+    .footer {
+        grid-area: ft;
+    }
+    body {
+        display: grid;
+        grid-template-areas:
+            "hd hd sd"
+            "main  main sd"
+            "main  main sd"
+            "ft ft sd";
+            background-image: url(/frontend-mentor/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+    }
+
+    .hero__mobile-img {
+        content: url(/frontend-mentor/base-apparel-coming-soon-master/images/hero-desktop.jpg);
+        height: 100vh;
+    }
+
+    .header {
+        padding: 0;
+    }
+    .header, .main {
+        margin: 2rem 13rem 2rem 8rem;
+    }
+
+    .title, .title__content p {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    .title__content p {
+        font-size: 0.8rem;
+        padding-bottom: 2rem;
+    }
+
+    .submit-form {
+        margin: 0 0 1rem 0;
+    }
+}

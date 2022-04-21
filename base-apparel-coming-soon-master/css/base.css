@@ -1,0 +1,8 @@
+:root {
+    --font: "Josefin Sans", sans-serif;
+    --desaturated-red: hsl(0, 36%, 70%);
+    --desaturated-red-opacity: hsla(0, 36%, 70%, 0.5);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-greyish-red: hsl(0, 6%, 24%);
+    --shadow: hsla(0, 93%, 68%, 0.5);
+}
