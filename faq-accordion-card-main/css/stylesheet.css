@@ -56,6 +56,7 @@ main {
     justify-content: flex-start;
     padding: 4rem 0 2rem 0;
     margin-right: 4rem;
+    overflow: scroll;
     
 }
 
@@ -155,6 +156,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        overflow: scroll;
     }
 
     .text__title {
@@ -163,6 +165,7 @@ hr {
 
     .accordion {
         padding: 1rem;
+        
     }
 
 
