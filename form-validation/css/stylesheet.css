@@ -1,0 +1,136 @@
+* {
+    font-family: var(--font);
+}
+
+body {
+    background-color:var(--background-color);
+    height: 100vh;
+    color: var(--font-color)
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    
+}
+.input-container {
+display: flex;
+flex-direction: column;
+margin: 0.5rem;
+}
+
+.input-label {
+    padding: 0 0 0.5rem 0.5rem;
+}
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid brown;
+}
+
+.input-container--invalido .input-label {
+    color:brown;
+}
+
+
+.input-container--invalido .input-error-message {
+    color: var(--cor-aviso);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+
+.input-error-message {
+    display: none;
+}
+
+.form {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    max-height: 50rem; 
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+fieldset {
+    width: inherit;
+}
+
+.form__legend {
+    font-size: 1.5rem;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.botao {
+    display: block;
+    background-color: var(--button-color);
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    color: var(--cor-contraste-claro);
+    font-size: var(--fonte-tamanho-botao);
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    body {
+        height: 100vh;
+    }
+    .container {
+        height: inherit;
+        width: inherit;
+       
+    }
+
+    .title{
+        font-size: 1.2rem;
+        padding: 0 0 0.5rem 0;
+    }
+
+    .form__legend {
+        font-size: 0.8rem;
+    }
+    .form {
+        display: block;
+        width: 15rem;
+        max-height: 42rem;
+        overflow: scroll;
+        padding: 2rem;
+    }
+
+    .input-label, .input {
+        font-size: 0.8rem;
+    }
+
+    .input-error-message {
+        font-size: 0.8rem;
+    }
+
+    .botao {
+        margin-bottom: 0;
+    }
+   
+   
+}
