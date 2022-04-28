@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="/frontend-mentor/time-tracking-dashboard-main/css/reset.css">
+  <link rel="stylesheet" href="/frontend-mentor/time-tracking-dashboard-main/css/base.css">
+  <link rel="stylesheet" href="/frontend-mentor/time-tracking-dashboard-main/css/style.css">
+</head>
+
+<body>
+  <div class="grid">
+  <header>
+    <div class="profile-card">
+      <div class="profile-card__user">
+        <div class="profile-card__image"></div>
+        <div>
+          <p>Report for</p>
+        <p class="profile-card__user---name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="profile-card__frequency">
+        <li>
+          <button class="btn" id="btn-daily" data-id="daily">Daily</button>
+          <button class="btn" id="btn-weekly" data-id="weekly">Weekly</button>
+          <button class="btn" id="btn-monthly" data-id="monthly">Monthly</button>
+        </li>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div class="tracking-card grid-work"> 
+      <div class="tracking-card__container tracking-card__container---work">
+        <div class="tracking-card__image work"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+       <p>Work</p> 
+       <div class="tracking-card__menu"></div>
+      </div>
+      <div class="tracking-card__content---previous">
+         <p id="current-daily-work" data-type="current">5hrs</p>
+         <p id="previous-daily-work" data-type="previous">Yesterday - 7 hours</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="tracking-card grid-play"> 
+      <div class="tracking-card__container tracking-card__container---play">
+        <div class="tracking-card__image play"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+       <p>Play</p> 
+       <div class="tracking-card__menu"></div>
+      </div>
+      <div class="tracking-card__content---previous">
+         <p id="current-daily-play" data-type="current">1hr</p>
+         <p id="previous-daily-play" data-type="previous">Yesterday - 2 hours</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="tracking-card grid-study"> 
+      <div class="tracking-card__container tracking-card__container---study">
+        <div class="tracking-card__image study"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+       <p>Study</p> 
+       <div class="tracking-card__menu"></div>
+      </div>
+      <div class="tracking-card__content---previous">
+         <p id="current-daily-study">0hr</p>
+         <p id="previous-daily-study">Yesterday - 1 hour</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="tracking-card grid-exercise"> 
+      <div class="tracking-card__container tracking-card__container---exercise">
+        <div class="tracking-card__image exercise"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+       <p>Exercise</p> 
+       <div class="tracking-card__menu"></div>
+      </div>
+      <div class="tracking-card__content---previous">
+         <p id="current-daily-exercise">1hr</p>
+         <p id="previous-daily-exercise">Yesterday - 1 hour</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="tracking-card"> 
+      <div class="tracking-card__container tracking-card__container---social">
+        <div class="tracking-card__image social"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+       <p>Social</p> 
+       <div class="tracking-card__menu"></div>
+      </div>
+      <div class="tracking-card__content---previous">
+         <p id="current-daily-social">1hr</p>
+         <p id="previous-daily-social">Yesterday - 3 hours</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="tracking-card"> 
+      <div class="tracking-card__container tracking-card__container---self-care">
+        <div class="tracking-card__image self-care"></div>
+      <div class="tracking-card__content">
+        <div class="tracking-card__content---current">
+          <p>Self Care</p> 
+          <div class="tracking-card__menu"></div>
+        </div>
+        <div class="tracking-card__content---previous">
+         <p id="current-daily-self-care">0hr</p>
+         <p id="previous-daily-self-care">Yesterday - 1 hour</p>
+       </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+</div>
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer> -->
+</body>
+
+<script src="/frontend-mentor/time-tracking-dashboard-main/js/app.js"></script>
+</html>
