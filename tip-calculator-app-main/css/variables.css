@@ -1,0 +1,12 @@
+:root {
+    --font:'Space Mono', monospace;
+    --very-light-grey: hsl(189, 41%, 97%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --light-grey-cyan: hsl(185, 41%, 84%);
+    --grey-cyan: hsl(184, 14%, 56%);
+    --dark-grey-cyan: hsl(186, 14%, 43%);
+    --strong-cyan: hsl(172, 67%, 45%);
+}
+
+
+

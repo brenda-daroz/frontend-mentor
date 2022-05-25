@@ -1,0 +1,36 @@
+
+.input-wrapper {
+    width: 100%;  
+    display: flex;
+    border-radius: 0.4rem;
+    background-color: var(--very-light-grey);
+    line-height: 1.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;  
+    border: 1px solid var(--very-light-grey);
+}
+
+.input-wrapper:focus-within{
+    outline: none;
+    border: 1.5px solid var(--strong-cyan);  
+}
+
+img {
+    background-color: var(--very-light-grey);
+    height: fit-content;
+}
+
+.input:focus {
+    outline: none;
+}
+.input {
+    border: none;  
+    width: inherit;
+    background-color: inherit;  
+    line-height: inherit;
+    text-align:right;
+    font: var(--font);
+}
+
+

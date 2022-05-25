@@ -1,0 +1,64 @@
+.tip-button__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 0;
+    
+}
+
+.tip-button__container input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width:0;
+}
+
+.tip-button__container label, .custom-tip {
+    display: inline-block;
+    background-color: var(--very-dark-cyan);
+    padding: 8px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 20px;
+    border: 1.5px solid var(--very-dark-cyan);
+    border-radius: 4px;
+    width: 47%;
+    text-align: center;
+    margin: 0.5rem 0;
+    color: white;
+    font: var(--font);
+}
+
+.custom-tip {
+    background-color: var(--very-light-grey);
+    color: var(--very-dark-cyan);
+    border: none;
+}
+
+.custom-tip-focus {
+    outline: none;
+    border: 1.5px solid var(--strong-cyan);
+}
+.tip-button__container label:hover {
+    background-color: var(--strong-cyan);
+    cursor: pointer;
+  }
+  
+  .tip-button__container input[type="radio"]:focus + label {
+      border: 1.5px dashed #444;
+  }
+  
+  .tip-button__container input[type="radio"]:checked + label {
+      background-color: var(--strong-cyan);
+      border-color: var(--very-dark-cyan);
+  }
+
+  fieldset {
+    border: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .tip-button__container label, .custom-tip {
+        width: 30%;
+    }
+}

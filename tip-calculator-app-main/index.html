@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/inputs.css">
+  <link rel="stylesheet" href="css/radio-button.css">
+</head>
+
+<body>
+  <header>
+    <h1>Spli<br>tter</h1>
+  </header>
+
+  <div class="main__wrapper">
+    <main class="main">
+      <div class="input-container">
+        <p>Bill</p>
+        <div class="input-wrapper">
+          <img src="images/icon-dollar.svg" alt="">
+          <input class="input input-bill" type="number" id="input-bill" placeholder="0.00" min="0.00">
+        </div>
+        <p>Select Tip %</p>
+        <fieldset >
+          <div class="tip-button__container">
+          <input type="radio" id="btn-tip-5" name="tip" value="5" checked>
+          <label for="btn-tip-5">5%</label>
+          <input type="radio" id="btn-tip-10" name="tip" value="10">
+          <label for="btn-tip-10">10%</label>
+          <input type="radio" id="btn-tip-15" name="tip" value="15">
+          <label for="btn-tip-15">15%</label>
+          <input type="radio" id="btn-tip-25" name="tip" value="25">
+          <label for="btn-tip-25">25%</label>
+          <input type="radio" id="btn-tip-50" name="tip" value="50">
+          <label for="btn-tip-50">50%</label>
+          <input class="custom-tip" type="number" id="btn-tip-custom" name="tip" placeholder="Custom" >
+          <!-- <label for="btn-tip-custom">Custom</label> -->
+        </div>
+        </fieldset>
+
+
+        <p> Number of People</p>
+        <div class="input-wrapper">
+          <img src="images/icon-person.svg" alt="">
+          <input id="input-people" class="input" type="number" value="1" min="1.00" step="1.00">
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="result-container__wrapper">
+        <div class="result-container__value">
+          <p>Tip amount<span>/ person</span></p>
+          <p class="result__value" id="tip-value">$0.00</p>
+        </div>
+        <div class="result-container__value">
+          <p>Total<span>/ person</span></p>
+          <p id="result-value" class="result__value">$0.00</p>
+        </div>
+        </div>
+       
+        <button id="btn-reset" class="btn-reset">Reset</button>
+
+      </div>
+  </div>
+  </main>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
