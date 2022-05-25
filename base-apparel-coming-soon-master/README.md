@@ -16,7 +16,7 @@ This is a solution to the [Base Apparel coming coon page challenge on Frontend M
 
 ### Screenshot
 
-![Project Screenshot](base-apparel-coming-soon-master/base-apparel.png?raw=true "Project Screenshot")
+![Project Screenshot](/base-apparel-coming-soon-master/base-apparel.png?raw=true "Project Screenshot")
 
 ### Built with
 
