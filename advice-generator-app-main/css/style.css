@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;  
+    
+}
+
+main {
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    height: fit-content;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;  
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.title {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.2rem;
+}
+
+.advice {
+    color: hsl(193, 38%, 86%);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.img-divider {
+   bottom: 3.5rem;
+   position: absolute;
+}
+
+.button-container {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    transform: translateY(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-color:  hsl(150, 100%, 66%);
+    position: absolute;
+    cursor: pointer;   
+}
+
+.button:hover {
+    box-shadow: 1px 2px 40px 8px rgba(82,255,168,0.78);
+}
+
+.attribution {
+    color: hsl(223, 12%, 60%);
+    font-size: 0.6rem;
+   
+}
+.attribution a{
+    color: hsl(150, 100%, 66%);
+    font-size: 0.6rem;
+    
+    text-decoration: none;
+}
+
+@media screen and (min-width: 600px){
+    .container {
+        width: 30rem;
+        height:fit-content;
+    }
+}
