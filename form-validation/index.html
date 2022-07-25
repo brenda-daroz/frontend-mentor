@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New User</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/frontend-mentor/form-validation/css/stylesheet.css">
-    <link rel="stylesheet" href="/frontend-mentor/form-validation/css/base.css">
-    <link rel="stylesheet" href="/frontend-mentor/form-validation/css/reset.css">
+    <link rel="stylesheet" href="/form-validation/css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="/frontend-mentor/form-validation/css/base.css">
+    <link rel="stylesheet" href="/frontend-mentor/form-validation/css/reset.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+</head>
+
 <body>
-   
+
     <main class="container">
-        <form action="./confirmed-account.html" class="form flex flex--coluna">
+        <form class="form flex flex--coluna needs-validation" novalidate>
             <h1 class="title">Create account</h1>
-        <fieldset>
-            <legend class="form__legend">Personal information</legend>
-            <div class="input-container">
-                <label class="input-label" for="name">Name</label>
-                <input name="name" id="name" class="input" type="text" placeholder="Name" data-type="name" required>
-                <span class="input-error-message">Invalid information</span>
+            <fieldset>
+                <legend class="form__legend">Personal information</legend>
+                
+                <div class="form-floating mb-3" >
+                    <input id="validationCustom01" type="text" class="form-control" id="floatingInput" placeholder="Name"  data-type="name">
+                    <label for="validationCustom01" for="floatingInput">Name</label>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" data-type="email">
+                    <label for="floatingEmail">E-mail</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                        pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!=.*[*.!@$%^&(){}[]:;>,.?/~_+-=|\]).{6,12}$"
+                        data-type="password" required>
+                    <label for="floatingPassword">Password</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="input-container">
+                    <label for="birth">Date of birth</label>
+                    <input type="date" id="birth" class="input" placeholder="Date of birth" data-type="dateOfBirth"
+                        required>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="form__legend">Address</legend>
+                <div class="address-wrapper">
+                <div class="form-floating col-md-6 postal-code" >
+                    <input type="text" class="form-control" id="floatingAddress" data-type="postalCode"
+                        placeholder="Postal Code" pattern="[\d]{5}-?[\d]{3}" required>
+                    <label for="floatingAddress">Postal Code</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="form-floating  col-md-6 street">
+                    <input name="street" id="floatingStreet" class="form-control" type="text" placeholder="Street"
+                        data-type="street" required>
+                    <label class="input-label" for="floatingStreet">Street</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
             </div>
-            <div class="input-container">
-                <label class="input-label" for="email">Email</label>
-                <input name="email" id="email" class="input" type="email" placeholder="Email" data-type="email" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="senha">Password</label>
-                <input name="password" id="password" class="input" type="password" placeholder="Password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!=.*[*.!@$%^&(){}[]:;>,.?/~_+-=|\]).{6,12}$" data-type="password" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="nascimento">Date of birth</label>
-                <input name="birth" id="birth" class="input" type="date" placeholder="Date of birth" data-type="dateOfBirth" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend class="form__legend">Address</legend>
-            <div class="input-container">
-                <label class="input-label" for="cep">Postal Code</label>
-                <input name="zipcode" id="zipcode" class="input" type="text" placeholder="Postal Code" pattern="[\d]{5}-?[\d]{3}" data-type="postalCode" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="street">Street</label>
-                <input name="street" id="street" class="input" type="text" placeholder="Street" data-type="street" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="street-number">Number</label>
-                <input name="street-number" id="street-number" class="input" type="text" placeholder="Number" data-type="number" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="cidade">City</label>
-                <input name="city" id="city" class="input" type="text" placeholder="City" data-type="city" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-            <div class="input-container">
-                <label class="input-label" for="state">State</label>
-                <input name="state" id="state" class="input" type="text" placeholder="State" data-type="state" required>
-                <span class="input-error-message">Invalid information</span>
-            </div>
-        </fieldset>
-        <button class="botao">Submit</a>
+                <div class="form-floating mb-3">
+                    <input name="street-number" id="floatingNumber" class="form-control" type="text"
+                        placeholder="Number" data-type="number" required>
+                    <label class="input-label" for="floatingNumber">Number</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input name="city" id="floatingCity" class="form-control" type="text" placeholder="City"
+                        data-type="city" required>
+                    <label class="input-label" for="floatingCity">City</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input name="state" id="floatingState" class="form-control" type="text" placeholder="State"
+                        data-type="state" required>
+                    <label class="input-label" for="floatingState">State</label>
+                    <span class="input-error-message">Invalid information</span>
+                </div>
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Submit form</button>
         </form>
     </main>
 
     <!-- <script type="module" src="/frontend-mentor/form-validation/js/validation.js"></script> -->
-    <script type="module" src="/frontend-mentor/form-validation/js/app.js"></script>
+    <script type="module" src="/form-validation/js/app.js"></script>
 </body>
+
 </html>

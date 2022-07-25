@@ -1,4 +1,20 @@
-* {
+
+.address-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0 !important;
+    right: 0;
+    
+}
+
+.street, .postal-code {
+   width: 48% !important;
+}
+
+
+
+/* * {
     font-family: var(--font);
 }
 
@@ -135,4 +151,4 @@ fieldset {
     }
    
    
-}
+} */
