@@ -14,7 +14,7 @@ body {
 .caroussel__item {
     padding: 4rem;
     display: none; 
-    background-image: url("/coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg");
+    background-image: url("/frontend-mentor/coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg");
     background-size: 650px;
     background-repeat: no-repeat;  
     background-position: right;
@@ -29,7 +29,7 @@ body {
 }
 
 .caroussel__text {
-    background-image: url("/coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg");
+    background-image: url("/frontend-mentor/coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg");
     background-repeat: no-repeat;
     background-position-x: 10rem;
 }
@@ -91,7 +91,7 @@ body {
 
 .caroussel__button--next {
     content: '';
-    background-image: url("/coding-bootcamp-testimonials-slider-master/images/icon-next.svg");
+    background-image: url("/frontend-mentor/coding-bootcamp-testimonials-slider-master/images/icon-next.svg");
     background-repeat: no-repeat ;  
     
    
@@ -99,12 +99,12 @@ body {
 
 .caroussel__button--previous {
     content: '';
-    background-image: url("/coding-bootcamp-testimonials-slider-master/images/icon-prev.svg");
+    background-image: url("/frontend-mentor/coding-bootcamp-testimonials-slider-master/images/icon-prev.svg");
     background-repeat: no-repeat ; 
    
 }
 .decorative__footer {
-    background-image: url("/coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg");
+    background-image: url("/frontend-mentor/coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg");
     background-size: 100% ;
     height: 25vw;
     background-repeat: no-repeat ;
