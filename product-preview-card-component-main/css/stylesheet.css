@@ -89,7 +89,7 @@ button {
     border-radius: 0.5rem;
     padding: 1rem;
     color: white;
-    background-image: url("/product-preview-card-component-main/images/icon-cart.svg");
+    background-image: url("/frontend-mentor/product-preview-card-component-main/images/icon-cart.svg");
     background-repeat: no-repeat;
     background-position:left 60px bottom 50%;
     font-family: "Montserrat";
